@@ -1,0 +1,88 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap"); */
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Helvetica"),
+    url("../../../public/fonts/Helvetica.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Light";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Helvetica Light"),
+    url("../../../public/fonts/Helvetica-Light.woff") format("woff");
+}
+
+:root {
+  /* --background: #ffffff;
+  --foreground: #171717; */
+  --background: #fbfb01;
+  --background-red: #ff371e;
+  --foreground: #171717;
+  --foreground-white: #fff;
+
+  --primary: #fbfb01;
+  --black: #000;
+
+  --font-helvetica: "Helvetica";
+  --font-helvetica-light: "Helvetica Light";
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-title: var(--font-yeseva-one);
+  --font-base: var(--font-josefin-sans);
+  --font-helvetica: var(--font-helvetica);
+  --font-helvetica-light: var(--font-helvetica-light);
+}
+
+:root {
+  /* --background: #0a0a0a; */
+  --background: #fbfb01;
+  --foreground: #0a0a0a;
+  /* --foreground: #ededed; */
+}
+
+/* * {
+  color: var(--foreground);
+} */
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* @media (prefers-color-scheme: dark) { */
+/* :root { */
+/* --background: #0a0a0a; */
+/* --background: #fbfb01; */
+/* --foreground: #0a0a0a; */
+/* --foreground: #ededed; */
+/* } */
+
+/* * { */
+/* color: var(--foreground); */
+/* } */
+/* } */
