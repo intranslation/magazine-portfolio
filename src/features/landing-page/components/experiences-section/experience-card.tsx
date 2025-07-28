@@ -1,6 +1,8 @@
 "use client";
 
+import useGeneralStore from "@/store/store";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 
 export default function ExperienceCard({
@@ -13,6 +15,8 @@ export default function ExperienceCard({
     description: string;
   };
 }) {
+  const t = useTranslations();
+  const { lenis } = useGeneralStore();
   const ref = useRef<null | HTMLDivElement>(null);
   const [isHovering, setIsHovering] = useState(false);
   const [showHoverEffect, setShowHoverEffect] = useState(false);
@@ -32,31 +36,25 @@ export default function ExperienceCard({
       setIsMobile(window.innerWidth <= 800);
     }
     if (window.innerWidth >= 800) {
-      console.log("returning");
       return;
     }
-    console.log("not returning");
 
-    const scrollContainer = document.querySelector("html") as HTMLElement;
-    console.log("scroll container", scrollContainer);
+    if (!lenis) {
+      return;
+    }
 
-    scrollContainer.addEventListener("scroll", () => {
-      console.log("scrolling");
-      // console.log("ref?", ref);
-      // if (!ref || !ref.current) return;
-      // const offsetTop = ref.current.getBoundingClientRect().top;
+    lenis?.on("scroll", () => {
+      if (!ref || !ref.current) return;
 
-      // console.log(offsetTop);
-      // if (offsetTop <= window.innerHeight / 2 && offsetTop > 0) {
-      //   setShowHoverEffect(true);
-      //   return;
-      // }
-      // setShowHoverEffect(false);
+      const offsetTop = ref.current.getBoundingClientRect().top;
+
+      if (offsetTop <= window.innerHeight / 2 && offsetTop > 0) {
+        setShowHoverEffect(true);
+        return;
+      }
+      setShowHoverEffect(false);
     });
-    // return () => {
-    //   scrollContainer.removeEventListener("scroll", onScroll);
-    // };
-  }, []);
+  }, [lenis]);
 
   const renderHover = isHovering || showHoverEffect;
 
@@ -80,7 +78,7 @@ export default function ExperienceCard({
               fontSize: "clamp(2.8rem, 5vw, 10rem)",
             }}
           >
-            {title}
+            {t(title)}
           </span>
           <div className="flex w-full items-center justify-between">
             <span
@@ -89,12 +87,12 @@ export default function ExperienceCard({
                 fontSize: "clamp(1rem, 2vw, 10rem)",
               }}
             >
-              at {company}
+              at {t(company)}
             </span>
             <span className="z-10 mx-2 block h-[1px] w-full bg-white mix-blend-difference transition-all"></span>
 
             <span className="z-10 block whitespace-nowrap mix-blend-difference">
-              {date}
+              {t(date)}
             </span>
           </div>
         </div>
@@ -123,7 +121,7 @@ export default function ExperienceCard({
               lineHeight: "clamp(2rem, 3vw, 10rem)",
             }}
           >
-            {description}
+            {t(description)}
           </span>
         </motion.div>
       </motion.div>

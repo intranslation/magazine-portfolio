@@ -1,38 +1,36 @@
 import Image from "next/image";
 import SimpleTextReveal from "../../../../components/animated/simple-text-reveal/simple-text-reveal";
-import { useRef } from "react";
-import { motion, useInView } from "motion/react";
+import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 
 const skills = [
-  ,
-  { title: "AI agents using Langchain", description: [] },
-  { title: "Data ingestion and transformation with Pandas", description: [] },
-  { title: "Motion and 3D based web development", description: [] },
+  { title: "skill1", description: [] },
+  { title: "skill2", description: [] },
+  { title: "skill3", description: [] },
   {
-    title: "Enterprise level front-ends with React +",
+    title: "skill4",
     description: [],
   },
   {
-    title: "Enterprise level back-ends using FastAPI and Django",
+    title: "skill5",
     description: [],
   },
   {
-    title: "Continuous integration pipelines built from scratch",
+    title: "skill6",
     description: [],
   },
   {
-    title: "Scalable and reusable deployment scripts with terraform",
+    title: "skill7",
     description: [],
   },
   {
-    title:
-      "Deployiment and scaling of apps on the cloud with GCP and AWS (EKS, VPCs, Lambdas)",
+    title: "skill8",
     description: [],
   },
 ];
 export default function HenriqueSection() {
-  // const ref = useRef(null);
-  // const isInView = useInView(ref, { once: true, amount: "all" });
+  const t = useTranslations();
+
   return (
     <div className="flex flex-col">
       <div className="font-helvetica-light relative mr-2 flex h-full flex-wrap items-start justify-between gap-0 text-right text-[8vw] text-white">
@@ -47,15 +45,8 @@ export default function HenriqueSection() {
           </motion.div>
 
           <div className="flex w-fit flex-col items-end justify-end">
-            <SimpleTextReveal>IM HENRIQUE</SimpleTextReveal>
-            <SimpleTextReveal>ALBUQUERQUE</SimpleTextReveal>
-            <SimpleTextReveal>A SENIOR SOFTWARE</SimpleTextReveal>
+            <SimpleTextReveal>{t("whoami1")}</SimpleTextReveal>
           </div>
-        </div>
-        <div className="ml-auto flex w-fit flex-col items-end justify-end">
-          <SimpleTextReveal>ENGINEER</SimpleTextReveal>
-          <SimpleTextReveal>BASED IN SÃO PAULO</SimpleTextReveal>
-          <SimpleTextReveal>BRAZIL</SimpleTextReveal>
         </div>
       </div>
 
@@ -66,11 +57,8 @@ export default function HenriqueSection() {
           viewport={{ once: true, amount: "all" }}
         >
           <span className="block h-[2rem]">SKILLS</span>
-          <span className="pl-[15vw]">I’m</span> a full-stack engineer with a
-          broad and versatile skill set, specializing in front-end development.
-          I have a proven track record of delivered end-to-end solutions across
-          market sectors like airlines, retail, and marketing. Here's a few
-          technologies I have professional experience with
+          <span className="pl-[15vw]">{t("skillsdescription1") + " "}</span>
+          {t("skillsdescription2")}
         </motion.p>
 
         <ul className="mt-12">
@@ -87,7 +75,7 @@ export default function HenriqueSection() {
               }}
               className="first-letter:text-2xl first-letter:text-[#FF594A]"
             >
-              {skill?.title}
+              {t(skill?.title)}
             </motion.li>
           ))}
         </ul>

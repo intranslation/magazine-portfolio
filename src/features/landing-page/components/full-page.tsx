@@ -33,7 +33,7 @@ export default function FullPage() {
 
           <SectionContainer
             id="experiences"
-            className="h-fit w-full bg-[var(--foreground)] max-sm:p-4"
+            className="-mt-1 w-full bg-[var(--foreground)] max-sm:p-4 max-sm:pb-[150px]"
           >
             <ExperiencesSection />
           </SectionContainer>

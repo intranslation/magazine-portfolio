@@ -1,5 +1,48 @@
 {
-  "Section1": {
-    "adjective1": "Construindo software para empresas top 100."
-  }
+  "adjective1": "Construindo software para empresas do top 100.",
+  "adjective2": "Trabalhando com equipes internacionais.",
+  "adjective3": "Enfrentando a complexidade com criatividade",
+  "language1": "português",
+  "language2": "inglês",
+  "menu1": "quem sou eu",
+  "menu2": "experiências",
+  "menu3": "contrate-me",
+  "bigtitle": "Desenvolvendo Sonhos",
+  "whoami1": "SOU HENRIQUE ALBUQUERQUE, ENGENHEIRO DE SOFTWARE SÊNIOR BASEADO EM SÃO PAULO, BRASIL",
+  "skills1": "Habilidades",
+  "skillsdescription1": "Sou",
+  "skillsdescription2": "um engenheiro full-stack com um conjunto amplo e versátil de habilidades, especializado em desenvolvimento front-end. Tenho histórico comprovado na entrega de soluções ponta a ponta em setores como aviação, varejo e marketing. Aqui estão algumas tecnologias com as quais tenho experiência profissional",
+  "skill1": "Agentes de IA usando Langchain",
+  "skill2": "Ingestão e transformação de dados com Pandas",
+  "skill3": "Desenvolvimento web baseado em movimento e 3D",
+  "skill4": "Front-ends de nível corporativo com React +",
+  "skill5": "Back-ends de nível corporativo usando FastAPI e Django",
+  "skill6": "Pipelines de integração contínua construídos do zero",
+  "skill7": "Scripts de implantação escaláveis e reutilizáveis com Terraform",
+  "skill8": "Implantação e escalonamento de apps na nuvem com GCP e AWS (EKS, VPCs, Lambdas)",
+
+  "experiences": "experiências",
+  "experience1front": "SENIOR SOFTWARE ENGINEER",
+  "experience1frontwhere": "na BCG X",
+  "experience1frontwhen": "03/2025 - Presente",
+  "experience1behind": "Liderando a implementação técnica de software de nível corporativo",
+
+  "experience2front": "SOFTWARE ENGINEER",
+  "experience2frontwhere": "na BCG X",
+  "experience2frontwhen": "08/2022 - 03/2025",
+  "experience2behind": "Entregando software de alta qualidade para empresas do top 100",
+
+  "experience3front": "JUNIOR SOFTWARE ENGINEER",
+  "experience3frontwhere": "no SAFRA",
+  "experience3frontwhen": "05/2021 - 07/2022",
+  "experience3behind": "Introduzindo frameworks modernos de JavaScript ao setor bancário",
+
+  "experience4front": "ESTAGIÁRIO",
+  "experience4frontwhere": "no SAFRA",
+  "experience4frontwhen": "01/2020 - 05/2021",
+  "experience4behind": "Aprendendo sobre o mundo",
+
+  "hire1": "Vencendo a complexidade com software",
+  "hire2": "Disponível para contratação",
+  "hire3": "Cada desafio que enfrentei me trouxe até aqui. Obrigado por visitar meu site <3. Estou sempre em busca de novos desafios, convites para entrevistas e propostas de freelance. Sinta-se à vontade para entrar em contato comigo em"
 }

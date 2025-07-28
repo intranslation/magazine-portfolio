@@ -27,7 +27,7 @@ export default function InitialSection() {
       </div>
 
       <div className="flex w-full flex-nowrap justify-between max-sm:flex-wrap">
-        <div className="font-base z-30 flex flex-col text-left">
+        <div className="font-base z-30 flex flex-col text-left max-sm:gap-8">
           <PerLetterReveal
             // content="Building software for top 100 companies."
             content={t("adjective1")}
@@ -37,33 +37,56 @@ export default function InitialSection() {
           />
 
           <PerLetterReveal
-            content="Working with international teams."
+            content={t("adjective2")}
             size="3xl"
             customDelay={2}
+            className="flex-wrap"
           />
 
           <PerLetterReveal
-            content="Tackling complexity with creativity."
+            content={t("adjective3")}
             size="3xl"
             customDelay={2.5}
+            className="flex-wrap"
           />
         </div>
 
         <div className="font-base z-30 flex flex-col text-left max-sm:hidden">
+          <a className="hover:underline" href="/pt">
+            <PerLetterReveal
+              content={t("language1")}
+              size="3xl"
+              customDelay={2}
+            />
+          </a>
+
+          <a className="hover:underline" href="/en">
+            <PerLetterReveal
+              content={t("language2")}
+              size="3xl"
+              customDelay={1.5}
+            />
+          </a>
+        </div>
+        <div className="font-base z-30 flex flex-col text-left max-sm:hidden">
           <a href="#whoami" className="hover:underline">
-            <PerLetterReveal content="Who am i?" size="3xl" customDelay={2} />
+            <PerLetterReveal content={t("menu1")} size="3xl" customDelay={2} />
           </a>
 
           <a href="#experiences" className="hover:underline">
             <PerLetterReveal
-              content="Experiences"
+              content={t("menu2")}
               size="3xl"
               customDelay={1.5}
             />
           </a>
 
           <a href="#hireme" className="hover:underline">
-            <PerLetterReveal content="Hire me" size="3xl" customDelay={2.5} />
+            <PerLetterReveal
+              content={t("menu3")}
+              size="3xl"
+              customDelay={2.5}
+            />
           </a>
         </div>
       </div>

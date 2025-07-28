@@ -10,32 +10,31 @@ export const projects = [
 
 export const experiences = [
   {
-    title: "Senior Software Engineer",
-    company: "BCG X",
+    title: "experience1front",
+    company: "experience1frontwhere",
     url: "https://www.bcg.com/",
-    date: "03/2025 - Present",
-    description:
-      "Leading technical implementation of enterprise level software",
+    date: "experience1frontwhen",
+    description: "experience1behind",
   },
   {
-    title: "Software Engineer",
-    company: "BCG X",
+    title: "experience2front",
+    company: "experience2frontwhere",
     url: "https://www.bcg.com/",
-    date: "08/2022 - 03/2025",
-    description: "Delivering high quality software for top 100 companies",
+    date: "experience2frontwhen",
+    description: "experience2behind",
   },
   {
-    title: "Junior Software Engineer",
-    company: "SAFRA",
+    title: "experience3front",
+    company: "experience3frontwhere",
     url: "https://www.safra.com.br/",
-    date: "05/2021 - 07/2022",
-    description: "Bringing modern javascript frameworks to banking",
+    date: "experience3frontwhen",
+    description: "experience3behind",
   },
   {
-    title: "Intern",
-    company: "SAFRA",
+    title: "experience4front",
+    company: "experience4frontwhere",
     url: "https://www.safra.com.br/",
-    date: "01/2020 - 05/2021",
-    description: "Learning about the world",
+    date: "experience4frontwhen",
+    description: "experience4behind",
   },
 ];

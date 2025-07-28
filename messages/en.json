@@ -1,5 +1,48 @@
 {
-  "Section1": {
-    "adjective1": "Building software for top 100 comapnies."
-  }
+  "adjective1": "Building software for top 100 comapnies.",
+  "adjective2": "Working with international teams.",
+  "adjective3": "tackling complexity with creativity",
+  "language1": "portuguese",
+  "language2": "english",
+  "menu1": "who am i",
+  "menu2": "experiences",
+  "menu3": "hire me",
+  "bigtitle": "Developing Dreams",
+  "whoami1": "I'M HENRIQUE ALBUQUERQUE, SENIOR SOFTWARE ENGINEER BASED IN SAO PAULO, BRAZIL",
+  "skills1": "Skills",
+  "skillsdescription1": "I'm",
+  "skillsdescription2": "a full-stack engineer with a broad and versatile skill set, specializing in front-end development. I have a proven track record of delivered end-to-end solutions across market sectors like airlines, retail, and marketing. Here's a few technologies I have professional experience with",
+  "skill1": "AI agents using Langchain",
+  "skill2": "Data ingestion and transformation with Pandas",
+  "skill3": "Motion and 3D based web development",
+  "skill4": "Enterprise level front-ends with React +",
+  "skill5": "Enterprise level back-ends using FastAPI and Django",
+  "skill6": "Continuous integration pipelines built from scratch",
+  "skill7": "Scalable and reusable deployment scripts with terraform",
+  "skill8": "Deployiment and scaling of apps on the cloud with GCP and AWS (EKS, VPCs, Lambdas)",
+
+  "experiences": "experiences",
+  "experience1front": "SENIOR SOFTWARE ENGINEER",
+  "experience1frontwhere": "at BCG X",
+  "experience1frontwhen": "03/2025 - Present",
+  "experience1behind": "Leading technical implementation of enterprise level software",
+
+  "experience2front": "SOFTWARE ENGINEER",
+  "experience2frontwhere": "at BCG X",
+  "experience2frontwhen": "08/2022 - 03/2025",
+  "experience2behind": "Delivering high quality software for top 100 companies",
+
+  "experience3front": "JUNIOR SOFTWARE ENGINEER",
+  "experience3frontwhere": "at SAFRA",
+  "experience3frontwhen": "05/2021 - 07/2022",
+  "experience3behind": "Bringing modern javascript frameworks to banking",
+
+  "experience4front": "INTERN",
+  "experience4frontwhere": "at SAFRA",
+  "experience4frontwhen": "01/2020 - 05/2021",
+  "experience4behind": "Learning about the world",
+
+  "hire1": "Conquering Complexity with Software",
+  "hire2": "Available for hiring",
+  "hire3": "Every challenge I've faced led me to here, thanks for checking out my website <3. I'm always looking for new challenges, interview invitations, and freelance proposals. Feel free to reach out to me at"
 }

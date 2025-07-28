@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import ExperienceCard from "./experience-card";
 import { experiences } from "@/utils/constants";
+import { useTranslations } from "next-intl";
 
 export default function ExperiencesSection() {
+  const t = useTranslations();
   return (
     <motion.section
       id="career"
@@ -18,7 +20,7 @@ export default function ExperiencesSection() {
           fontSize: "clamp(2rem, 5vw, 10rem)",
         }}
       >
-        Experiences
+        {t("experiences")}
       </span>
       {experiences.map((experience, index) => (
         <ExperienceCard key={index} experience={experience} />

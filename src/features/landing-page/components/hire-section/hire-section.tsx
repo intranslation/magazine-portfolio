@@ -1,11 +1,12 @@
-import { ArrowRightIcon, ArrowUpIcon } from "@radix-ui/react-icons";
+import { ArrowUpIcon } from "@radix-ui/react-icons";
 import SimpleTextReveal from "../../../../components/animated/simple-text-reveal/simple-text-reveal";
+import { useTranslations } from "next-intl";
 
 const texts = ["Conquering Complexity with Software.", "Available for hiring"];
-const hireMe =
-  "I'm always looking into new positions and freelance proposals, feel free to reach out to me";
 
 export default function HireSection() {
+  const t = useTranslations();
+
   return (
     <div className="h-full px-4 py-20 text-white">
       <ArrowUpIcon className="ml-auto h-[5vw] w-[5vw]" />
@@ -28,10 +29,11 @@ export default function HireSection() {
             )),
           )}
           <SimpleTextReveal className="w-[50%] text-right text-lg tracking-normal">
-            Every challenge I've faced led me to here, thanks for checking out
+            {t("hire3")}{" "}
+            {/* Every challenge I've faced led me to here, thanks for checking out
             my website {"<3"}. I'm always looking for new challenges, interview
             invitations, and freelance proposals. Feel free to reach out to me
-            at{" "}
+            at{" "} */}
             <a
               className="inline-block underline"
               href="https://www.linkedin.com/in/henrique-albuquerque-dev/"
