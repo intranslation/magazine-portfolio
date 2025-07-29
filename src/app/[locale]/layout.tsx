@@ -4,7 +4,7 @@ import "./globals.css";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 const geistSans = Josefin_Sans({
   variable: "--font-josefin-sans",
@@ -40,19 +40,9 @@ export default async function RootLayout({
         // ${crampsRegular.className}
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-W7JTHZFB"
-            height="0"
-            width="0"
-            style={{
-              display: "none",
-              visibility: "hidden",
-            }}
-          ></iframe>
-        </noscript>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
+      <GoogleTagManager gtmId="GTM-W7JTHZFB" />
       <GoogleAnalytics gaId="G-YF5G81FEBZ" />
     </html>
   );
