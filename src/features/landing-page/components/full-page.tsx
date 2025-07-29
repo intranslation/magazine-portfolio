@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ExperiencesSection from "./experiences-section/experiences";
 import InitialSection from "./initial-section/initial-section";
 import HenriqueSection from "./henrique-section/henrique-section";
@@ -8,13 +8,13 @@ import HireSection from "./hire-section/hire-section";
 import SectionContainer from "../../../components/ui/section-container";
 
 export default function FullPage() {
-  const [visible, setVisibility] = useState(true);
+  const [visible, setVisibility] = useState(false);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setVisibility(true);
-  //   }, 7500);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setVisibility(true);
+    }, 7500);
+  }, []);
 
   return (
     <>

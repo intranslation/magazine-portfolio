@@ -32,7 +32,7 @@ export default function QuickIntro() {
         opacity: 0,
       }}
     >
-      <div className="relative z-20 flex items-center justify-center gap-8">
+      <div className="relative z-20 flex items-center justify-center gap-8 max-sm:flex-col">
         <AnimatePresence>
           {ye && (
             <PerLetterReveal

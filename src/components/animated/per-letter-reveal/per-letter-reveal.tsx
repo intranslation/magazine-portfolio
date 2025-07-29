@@ -64,7 +64,7 @@ export default function PerLetterReveal({
           <motion.span key={word}>
             <>
               {word.split("").map((letter: string, i) => (
-                <Letter key={letter + word + i} i={i}>
+                <Letter key={letter + word + i} i={i} customDelay={customDelay}>
                   {letter}
                 </Letter>
               ))}

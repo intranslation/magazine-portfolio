@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import useGeneralStore from "../../store/store";
 import FullPage from "./components/full-page";
+import QuickIntro from "./components/quick-intro";
 
 export default function LandingPage() {
   const { setLenis } = useGeneralStore();
@@ -29,7 +30,7 @@ export default function LandingPage() {
   return (
     <main>
       <AnimatePresence>
-        {/* <QuickIntro key={"quick-intro"} /> */}
+        <QuickIntro key={"quick-intro"} />
         <FullPage />
       </AnimatePresence>
     </main>
