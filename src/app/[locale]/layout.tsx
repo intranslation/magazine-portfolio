@@ -4,6 +4,7 @@ import "./globals.css";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const geistSans = Josefin_Sans({
   variable: "--font-josefin-sans",
@@ -17,7 +18,7 @@ const geistMono = Yeseva_One({
 });
 
 export const metadata: Metadata = {
-  title: "whoami",
+  title: "Senior Software Engineer for hiring",
   description: "Portfolio by Henrique Albuquerque",
 };
 
@@ -41,6 +42,7 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
+      <GoogleAnalytics gaId="G-YF5G81FEBZ" />
     </html>
   );
 }
