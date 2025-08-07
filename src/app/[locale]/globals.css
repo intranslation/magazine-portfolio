@@ -28,11 +28,13 @@
   --foreground: #171717;
   --foreground-white: #fff;
 
-  --primary: #fbfb01;
+  --primary: #000000;
   --black: #000;
 
   --font-helvetica: "Helvetica";
   --font-helvetica-light: "Helvetica Light";
+
+  --text-fluid-small: "clamp(1rem, 2vw, 3rem)";
 }
 
 @theme inline {
@@ -45,13 +47,14 @@
   --font-base: var(--font-josefin-sans);
   --font-helvetica: var(--font-helvetica);
   --font-helvetica-light: var(--font-helvetica-light);
+  --text-fluid-small: var(--text-fluid-small);
 }
 
 :root {
-  /* --background: #0a0a0a; */
-  --background: #fbfb01;
-  --foreground: #0a0a0a;
-  /* --foreground: #ededed; */
+  --background: #0a0a0a;
+  /* --background: #fbfb01;
+  --foreground: #0a0a0a; */
+  --foreground: #ededed;
 }
 
 /* * {

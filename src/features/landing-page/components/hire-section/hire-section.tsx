@@ -8,7 +8,7 @@ export default function HireSection() {
   const t = useTranslations();
 
   return (
-    <div className="h-full px-4 py-20 text-white">
+    <div className="flex h-full flex-col justify-between px-4 py-20 text-white">
       <ArrowUpIcon className="ml-auto h-[5vw] w-[5vw]" />
       {/* <SimpleTextReveal className="font-helvetica ml-auto block w-fit pt-6 text-[5vw]">
         PROJECTS
@@ -42,6 +42,10 @@ export default function HireSection() {
             </a>
           </SimpleTextReveal>
         </div>
+      </div>
+
+      <div className="mt-auto">
+        <small>Made with love by me - All right reserved</small>
       </div>
     </div>
   );

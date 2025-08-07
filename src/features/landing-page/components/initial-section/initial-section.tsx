@@ -10,7 +10,7 @@ export default function InitialSection() {
   return (
     <>
       <motion.div
-        className="absolute bottom-0 left-0 z-30 m-[2vw] animate-bounce rounded-full border border-black"
+        className="border-background absolute right-0 bottom-0 z-30 m-[2vw] animate-bounce rounded-full border text-black"
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
@@ -21,13 +21,13 @@ export default function InitialSection() {
       >
         <ArrowDownIcon className="h-14 w-14" />
       </motion.div>
-      <div className="absolute top-0 left-0 h-screen w-screen">
-        <div className="bg-primary/80 absolute top-0 left-0 z-20 h-screen w-screen saturate-200"></div>
+      <div className="absolute top-0 left-0 h-full w-full">
+        <div className="absolute top-0 left-0 z-20 h-screen w-screen bg-white/80 saturate-200"></div>
         <Image className="z-10 object-cover" src={"/oxa.jpg"} alt="" fill />
       </div>
 
-      <div className="flex w-full flex-nowrap justify-between max-sm:flex-wrap">
-        <div className="font-base z-30 flex flex-col text-left max-sm:gap-8">
+      <div className="flex w-full flex-nowrap justify-between text-black max-sm:flex-wrap">
+        <div className="z-30 flex flex-col text-left max-sm:gap-8">
           <PerLetterReveal
             // content="Building software for top 100 companies."
             content={t("adjective1")}
@@ -91,9 +91,15 @@ export default function InitialSection() {
         </div>
       </div>
 
-      <div className="z-30 mt-auto flex flex-col items-end self-end text-right">
+      {/* <div className="z-30 mt-auto flex flex-col items-end self-end text-right">
         <BigPerLetterReveal className="text-black" text="Developing" />
         <BigPerLetterReveal className="text-black" text="Dreams" />
+      </div> */}
+      <div className="z-30 mt-auto flex flex-col items-start self-start text-right">
+        <BigPerLetterReveal className="text-black" text="Software" />
+        <BigPerLetterReveal className="text-black" text="Engineer" />
+        <BigPerLetterReveal className="text-black" text="& Front-end" />
+        <BigPerLetterReveal className="text-black" text="Architect" />
       </div>
     </>
   );

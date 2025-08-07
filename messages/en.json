@@ -10,16 +10,17 @@
   "bigtitle": "Developing Dreams",
   "whoami1": "I'M HENRIQUE ALBUQUERQUE, SENIOR SOFTWARE ENGINEER BASED IN SAO PAULO, BRAZIL",
   "skills1": "Skills",
-  "skillsdescription1": "I'm",
-  "skillsdescription2": "a full-stack engineer with a broad and versatile skill set, specializing in front-end development. I have a proven track record of delivered end-to-end solutions across market sectors like airlines, retail, and marketing. Here's a few technologies I have professional experience with",
-  "skill1": "AI agents using Langchain",
-  "skill2": "Data ingestion and transformation with Pandas",
-  "skill3": "Motion and 3D based web development",
-  "skill4": "Enterprise level front-ends with React +",
-  "skill5": "Enterprise level back-ends using FastAPI and Django",
-  "skill6": "Continuous integration pipelines built from scratch",
-  "skill7": "Scalable and reusable deployment scripts with terraform",
-  "skill8": "Deployiment and scaling of apps on the cloud with GCP and AWS (EKS, VPCs, Lambdas)",
+  "skillsdescription1": "Throughout",
+  "skillsdescription2": "my career as a full-stack engineer, I’ve worked with a wide range of technologies — from building enterprise-level software with Python and JavaScript for Fortune 100 companies, to orchestrating data pipelines that power data science models and AI-driven applications.",
+  "skillsdescription3": "I've collaborated with engineers and clients around the world — most recently with BCG teams from France, the US, Morocco, and of course, Brazil.",
+  "skillsdescription4": "I build software with a strong sense of responsibility, leveraging the latest technical literature in software engineering to make scalable and easy-to-work projects.",
+  "specialities": "My specialities are",
+  "skill1": "> Enterprise level software with React and Django, architecture definition, tech guidance, cross-team colaboration",
+  "skill2": "> Reliable, secure and performant backends using Python based frameworks, event-based architecture, workloads processing",
+  "skill3": "> Configuration of continuous integration pipelines",
+  "skill4": "> AI agents using Langchain & Langgraph",
+  "skill5": "> Motion and 3D based web development",
+  "skill6": "> DevOps skills, Terraform scripts, deployment and scaling of APPs in on AWS.",
 
   "experiences": "experiences",
   "experience1front": "SENIOR SOFTWARE ENGINEER",
@@ -44,5 +45,5 @@
 
   "hire1": "Conquering Complexity with Software",
   "hire2": "Available for hiring",
-  "hire3": "Every challenge I've faced led me to here, thanks for checking out my website <3. I'm always looking for new challenges, interview invitations, and freelance proposals. Feel free to reach out to me at"
+  "hire3": "Thank you so much for checking out my website <3. I'm always looking for new challenges, interview invitations, and freelance proposals. Feel free to reach out to me at"
 }

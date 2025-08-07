@@ -15,13 +15,13 @@ export default function BigPerLetterReveal({
         <motion.span
           key={letter + i}
           className={
-            "font-title text-[14vw] leading-[11vw] tracking-tighter " +
-            className
+            "font-helvetica-light leading-[10vw] tracking-tighter " + className
           }
           style={{
             WebkitFontSmoothing: "antialiased",
             MozOsxFontSmoothing: "grayscale",
             fontSmooth: "always",
+            fontSize: "clamp(3rem, 10vw, 12rem)",
             // color: "var(--color-primary)",
           }}
           initial={{

@@ -19,14 +19,6 @@ const skills = [
     title: "skill6",
     description: [],
   },
-  {
-    title: "skill7",
-    description: [],
-  },
-  {
-    title: "skill8",
-    description: [],
-  },
 ];
 export default function HenriqueSection() {
   const t = useTranslations();
@@ -50,7 +42,12 @@ export default function HenriqueSection() {
         </div>
       </div>
 
-      <div className="font-base mt-[10rem] mr-8 ml-auto w-[50vw] text-white">
+      <div
+        style={{
+          fontSize: "clamp(1rem, 1.6vw, 3rem)",
+        }}
+        className="font-base mt-[10rem] mr-8 ml-auto flex w-[70vw] flex-col gap-4 text-white"
+      >
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -60,8 +57,23 @@ export default function HenriqueSection() {
           <span className="pl-[15vw]">{t("skillsdescription1") + " "}</span>
           {t("skillsdescription2")}
         </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: "all" }}
+        >
+          {t("skillsdescription3")}
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: "all" }}
+        >
+          {t("skillsdescription4")}
+        </motion.p>
 
         <ul className="mt-12">
+          <span className="block h-[2rem]">{t("specialities")}</span>
           {skills.map((skill, i) => (
             <motion.li
               key={skill?.title}

@@ -56,7 +56,9 @@ export default function PerLetterReveal({
   color?: string;
 }) {
   return (
-    <motion.div className={"m-0 h-fit max-h-fit overflow-hidden p-0"}>
+    <motion.div
+      className={"font-helvetica m-0 h-fit max-h-fit overflow-hidden p-0"}
+    >
       <motion.div
         className={`relative m-0 flex flex-row p-0 uppercase ${className}`}
       >
