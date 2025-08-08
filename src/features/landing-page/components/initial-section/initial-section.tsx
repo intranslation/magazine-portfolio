@@ -10,7 +10,7 @@ export default function InitialSection() {
   return (
     <>
       <motion.div
-        className="border-background absolute right-0 bottom-0 z-30 m-[2vw] animate-bounce rounded-full border text-black"
+        className="border-background absolute right-0 bottom-0 z-30 animate-bounce rounded-full border text-black max-2xl:m-[1vw]"
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
@@ -27,7 +27,7 @@ export default function InitialSection() {
       </div>
 
       <div className="flex w-full flex-nowrap justify-between text-black max-sm:flex-wrap">
-        <div className="z-30 flex flex-col text-left max-sm:gap-8">
+        <div className="z-30 flex flex-col text-left max-sm:gap-2">
           <PerLetterReveal
             // content="Building software for top 100 companies."
             content={t("adjective1")}

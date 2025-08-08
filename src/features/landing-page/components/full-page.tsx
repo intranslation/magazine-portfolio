@@ -20,7 +20,7 @@ export default function FullPage() {
     <>
       {visible && (
         <>
-          <SectionContainer className="relative flex h-[50vh] max-h-[50vh] min-h-[50vh] flex-col items-start min-sm:p-[7vw]">
+          <SectionContainer className="min-sm:p-[clamp(1rem, 7vw, 4rem)] relative flex h-[50vh] max-h-[50vh] min-h-[50vh] flex-col items-start">
             <InitialSection />
           </SectionContainer>
 

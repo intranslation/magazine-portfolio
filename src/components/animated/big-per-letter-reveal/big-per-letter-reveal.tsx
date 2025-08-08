@@ -21,7 +21,9 @@ export default function BigPerLetterReveal({
             WebkitFontSmoothing: "antialiased",
             MozOsxFontSmoothing: "grayscale",
             fontSmooth: "always",
-            fontSize: "clamp(3rem, 10vw, 12rem)",
+            fontSize: "clamp(3rem, 15vw, 8rem)",
+            lineHeight: "clamp(3rem, 15vw, 8rem)",
+
             // color: "var(--color-primary)",
           }}
           initial={{

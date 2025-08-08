@@ -23,7 +23,10 @@ export default function ExperiencesSection() {
         {t("experiences")}
       </span>
       {experiences.map((experience, index) => (
-        <ExperienceCard key={index} experience={experience} />
+        <ExperienceCard
+          key={experience.title.split(" ").join("-")}
+          experience={experience}
+        />
       ))}
     </motion.section>
   );
