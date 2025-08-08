@@ -11,9 +11,13 @@ export default function FullPage() {
   const [visible, setVisibility] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setVisibility(true);
     }, 7500);
+
+    () => {
+      clearTimeout(timeout);
+    };
   }, []);
 
   return (

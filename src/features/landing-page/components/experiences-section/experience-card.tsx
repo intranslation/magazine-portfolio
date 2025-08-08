@@ -20,21 +20,8 @@ export default function ExperienceCard({
   const ref = useRef<null | HTMLDivElement>(null);
   const [isHovering, setIsHovering] = useState(false);
   const [showHoverEffect, setShowHoverEffect] = useState(false);
-  const [expanded, setExpanded] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  const expand = () => {
-    setExpanded(true);
-  };
-
-  const close = () => {
-    setExpanded(false);
-  };
 
   useEffect(() => {
-    if (window) {
-      setIsMobile(window.innerWidth <= 800);
-    }
     if (window.innerWidth >= 800) {
       return;
     }
@@ -48,11 +35,7 @@ export default function ExperienceCard({
 
       const offsetTop = ref.current.getBoundingClientRect().top;
 
-      if (offsetTop <= window.innerHeight / 2 && offsetTop > 0) {
-        setShowHoverEffect(true);
-        return;
-      }
-      setShowHoverEffect(false);
+      setShowHoverEffect(offsetTop <= window.innerHeight / 2 && offsetTop > 0);
     });
   }, [lenis]);
 
