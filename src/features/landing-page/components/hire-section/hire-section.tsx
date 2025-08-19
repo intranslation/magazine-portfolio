@@ -38,14 +38,10 @@ export default function HireSection() {
               className="inline-block underline"
               href="https://www.linkedin.com/in/henrique-albuquerque-dev/"
             >
-              @henriquealbuquerque
+              @henriquealbq
             </a>
           </SimpleTextReveal>
         </div>
-      </div>
-
-      <div className="mt-auto">
-        <small>Made with love by me - All right reserved</small>
       </div>
     </div>
   );

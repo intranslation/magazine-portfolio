@@ -24,13 +24,13 @@ export default function FullPage() {
     <>
       {visible && (
         <>
-          <SectionContainer className="min-sm:p-[clamp(1rem, 7vw, 4rem)] relative flex h-[50vh] max-h-[50vh] min-h-[50vh] flex-col items-start">
+          <SectionContainer className="min-sm:p-[clamp(1rem, 7vw, 4rem)] relative flex h-[50dvh] max-h-[50dvh] min-h-[50dvh] flex-col items-start">
             <InitialSection />
           </SectionContainer>
 
           <SectionContainer
             id="whoami"
-            className="min-h-[100vh] bg-[var(--background)]"
+            className="min-h-[100dvh] bg-[var(--background)]"
           >
             <HenriqueSection />
           </SectionContainer>
@@ -44,7 +44,7 @@ export default function FullPage() {
 
           <SectionContainer
             id="hireme"
-            className="h-screen bg-[var(--background-red)] max-sm:p-0"
+            className="bg-[var(--background-red)] max-sm:p-0"
           >
             <HireSection />
           </SectionContainer>
